@@ -1,0 +1,77 @@
+/* App.css */
+
+.app {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #282c34;
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.game-image {
+  width: 80px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.game-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.game-info h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #61dafb;
+}
+
+.chessboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background: #3a3f4b;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.turn-indicator {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: #4a505c;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.game-over {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.85);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  z-index: 10;
+  border: 2px solid #61dafb;
+}
+
+.game-over p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
